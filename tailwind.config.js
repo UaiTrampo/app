@@ -10,7 +10,8 @@ module.exports = {
       colors: {
         laranja:"#ff3300",
         laranjaclaro:"#ff7600",
-        branco:"#ffffff"
+        branco:"#ffffff",
+        amareliclaro:"#FFF6EC"
       },
       dropShadow: {
         "dark": "0.10rem 0.10rem .0rem rgba(0, 0, 0, 0.5)",

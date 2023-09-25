@@ -17,7 +17,6 @@ export default function Home() {
       </div>
       <div className="flex justify-center">
         <form className="flex flex-col justify-center bg-gradient-to-b from-laranjaclaro to-laranja w-96 p-5 rounded-xl">
-          <h2 className="flex justify-center text-branco text-xl">Pré Cadastro</h2>
           <label htmlFor="nome" className="text-branco font-bold">Nome:</label>
           <input type="text" className="px-2 rounded"/>
           <label htmlFor="Cidade" className="text-branco font-bold">Cidade:</label>

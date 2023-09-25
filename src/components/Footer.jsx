@@ -1,0 +1,39 @@
+import Image from "next/image";
+import uaitrampo from "../../public/uaiTrampo.png"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
+import Link from "next/link";
+import { faFacebook, faInstagram } from "@fortawesome/free-brands-svg-icons";
+
+export default function Footer() {
+    return (
+
+        <div className="px-5 xl:px-44 mt-20 py-10 bg-laranja flex flex-col xl:flex-row justify-between gap-20">
+            <div className="xl:w-96">
+                <Image src={uaitrampo} alt="logo uai trampo" className="w-44 drop-shadow-dark" />
+                <p className="text-branco text-justify">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt inventore, aliquam quod ea voluptatibus nostrum est nobis quae consequatur modi, distinctio doloremque ratione minima laudantium provident architecto? Provident, deleniti rem.
+                </p>
+            </div> 
+
+            <div className="flex flex-col justify-center items-center">
+                <h2 className="text-branco font-bold text-xl pb-5">
+                    Redes Sociais
+                </h2>
+                <div className="flex gap-5">
+                    <Link href="https://www.instagram.com/uaitrampo/" target="_blank">
+                        <FontAwesomeIcon icon={faInstagram} className="text-branco h-8 hover:scale-110 transition-all duration-300" />
+                    </Link>
+                    <Link href="https://www.facebook.com/uaitrampo" target="_blank">
+                        <FontAwesomeIcon icon={faFacebook} className="text-branco h-8 hover:scale-110 transition-all duration-300" />
+                    </Link>
+                </div>
+                <div className="py-5">
+                    <Link href="#" className="text-branco h-8 ">
+                        <p className="hover:scale-110 transition-all duration-300">(35)984265018</p>
+                    </Link>
+                </div>
+            </div>
+        </div>
+    )
+}

@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { useClient } from "react-server-dom-webpack/client"; // Import the useClient hook
 import { collection, addDoc } from "firebase/firestore";
 import { db } from '../config/firebase'
 import uaitrampo from "../../public/uaiTrampo.png"
@@ -79,4 +80,10 @@ function ItemCadastro() {
   )
 }
 
-export default ItemCadastro;
+function CadastroWrapper() {
+  useClient();
+
+  return <ItemCadastro />;
+}
+
+export default CadastroWrapper;

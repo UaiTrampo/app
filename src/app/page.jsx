@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { collection, addDoc } from "firebase/firestore";
 import { db } from '../config/firebase'
-import Image from "next/image";
 import uaitrampo from "../../public/uaiTrampo.png"
 
 function ItemCadastro() {
@@ -44,7 +43,7 @@ function ItemCadastro() {
   return (
     <div>
       <div className="flex justify-center items-center pt-20">
-        <Image src={uaitrampo} alt="Foto logo uaiTrampo" className=" px-5  md:w-1/2 drop-shadow-dark" />
+        <img src={uaitrampo} alt="UaiTrampo" className=" px-5  md:w-1/2 drop-shadow-dark" />
       </div>
       <div className="py-20 flex flex-col justify-center items-center">
         <h1 className="text-4xl md:text-8xl font-bold">

@@ -16,7 +16,7 @@ export default function FormCadastro() {
     const handleNomeChange = (e) => { setNome(e.target.value); };
     const handleCidadeChange = (e) => { setCidade(e.target.value); };
     const handleTelefoneChange = (e) => { setTelefone(e.target.value); };
-    const handleEmailChange = (e) => { setTelefone(e.target.value); };
+    const handleEmailChange = (e) => { setEmail(e.target.value); };
     const handleSeguimentoChange = (e) => { setSeguimento(e.target.value); };
 
     const handleSubmit = async (e) => {
@@ -27,7 +27,7 @@ export default function FormCadastro() {
                 nome: nome,
                 cidade: cidade,
                 telefone: telefone,
-                email:email,
+                email: email,
                 seguimento: seguimento,
             });
 
@@ -49,21 +49,21 @@ export default function FormCadastro() {
 
                 <div className="flex flex-col">
                     <label className="text-branco font-bold">Nome:</label>
-                    <input type="text" value={nome} className="px-2 rounded" onChange={handleNomeChange} />
+                    <input type="text" value={nome} className="px-2 rounded" onChange={handleNomeChange} required />
                 </div>
 
                 <div className="flex flex-col">
                     <label className="text-branco font-bold">Cidade:</label>
-                    <input type="text" value={cidade} className="px-2 rounded" onChange={handleCidadeChange} />
+                    <input type="text" value={cidade} className="px-2 rounded" onChange={handleCidadeChange} required />
                 </div>
 
                 <div className="flex flex-col">
                     <label className="text-branco font-bold">Telefone:</label>
-                    <input type="text" value={telefone} className="px-2 rounded" onChange={handleTelefoneChange} />
+                    <input type="text" value={telefone} className="px-2 rounded" onChange={handleTelefoneChange} required />
                 </div>
                 <div className="flex flex-col">
                     <label className="text-branco font-bold">Email:</label>
-                    <input type="text" value={email} className="px-2 rounded" onChange={handleEmailChange} />
+                    <input type="text" value={email} className="px-2 rounded" onChange={handleEmailChange} required />
                 </div>
                 <div className="flex flex-col">
                     <label className="text-branco font-bold">Segmento:</label>

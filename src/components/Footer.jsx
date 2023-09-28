@@ -8,12 +8,10 @@ import { faFacebook, faInstagram } from "@fortawesome/free-brands-svg-icons";
 export default function Footer() {
     return (
 
-        <div className="px-5 xl:px-44 mt-20 py-10 bg-amareliclaro flex flex-col xl:flex-row justify-between gap-20">
-            <div className="xl:w-96">
+        <div className="px-20 xl:px-44 mt-20 py-10 bg-amareliclaro flex flex-col xl:flex-row justify-between gap-20">
+            <div className="xl:w-96 flex justify-center items-center">
                 <Image src={uaitrampo} alt="logo uai trampo" className="w-44 drop-shadow-dark" />
-                
             </div> 
-
             <div className="flex flex-col justify-center items-center">
                 <h2 className=" font-bold text-xl pb-5">
                     Redes Sociais
